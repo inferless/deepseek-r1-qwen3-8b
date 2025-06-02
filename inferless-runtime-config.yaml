@@ -1,0 +1,7 @@
+build:
+  cuda_version: "12.1.1"
+  python_packages:
+    - accelerate==1.7.0
+    - transformers==4.52.4
+    - inferless==0.2.13
+    - pydantic==2.10.2
