@@ -9,7 +9,7 @@ class RequestObjects(BaseModel):
     prompt: str = Field(default="Give me a short introduction to large language model.")
     temperature: Optional[float] = 0.7
     repetition_penalty: Optional[float] = 1.18
-    max_new_tokens: Optional[int] = 2048
+    max_new_tokens: Optional[int] = 256
     
 
 @inferless.response
