@@ -21,7 +21,7 @@ class InferlessPythonModel:
     def initialize(self, context=None):
         model_id = "deepseek-ai/DeepSeek-R1-0528-Qwen3-8B"
         self.tokenizer = AutoTokenizer.from_pretrained(model_id,trust_remote_code=True)
-        self.model = AutoModelForCausalLM.from_pretrained( model_id, torch_dtype=torch.float16, device_map="auto", trust_remote_code=True)
+        self.model = AutoModelForCausalLM.from_pretrained( model_id, torch_dtype=torch.float16, device_map="cuda", trust_remote_code=True)
     def infer(self, request: RequestObjects) -> ResponseObjects:
         messages = [
             {"role": "user", "content": request.prompt}
