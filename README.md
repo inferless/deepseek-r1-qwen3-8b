@@ -1,5 +1,6 @@
 # Tutorial - Deploy DeepSeek-R1-Qwen3-8B using Inferless
-DeepSeek-R1-Qwen3-8B is the smallest member of the DeepSeek-R1-0528 family, created by distilling the long-chain-of-thought reasoning patterns of the 671B parameter DeepSeek-R1 into Qwen3-8B.
+
+DeepSeek-R1-0528-Qwen3-8B is an 8-billion-parameter model obtained by distilling the chain-of-thought reasoning abilities of DeepSeek-R1-0528 into the Qwen3 8B architecture while retaining DeepSeek-R1’s tokenizer, giving the small model long-context (64K tokens) support and stronger logical coherence.
 
 ## TL;DR:
 - Deployment of DeepSeek-R1-Qwen3-8B model using [transformers](https://github.com/huggingface/transformers).
